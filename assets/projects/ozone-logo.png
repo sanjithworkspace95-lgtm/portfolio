@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="csrf-token" content="">
+    <title>Page Not Found - Ozone Travels</title>
+    <link rel="icon" type="image/png" href="https://flyozone.travel/favlogo.png">
+    
+    <!-- Critical Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://flyozone.travel/web/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        .error-page {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 40px 20px;
+        }
+        
+        .error-container {
+            text-align: center;
+            max-width: 800px;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .error-logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+        
+        .error-logo:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: #1C6FBC;
+            margin: 0;
+            line-height: 1;
+            text-shadow: 3px 3px 0 rgba(28, 111, 188, 0.1);
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin: 20px 0 15px;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .btn-error {
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-home {
+            background: linear-gradient(90deg, #1C6FBC 0%, #0C8BD4 100%);
+            color: white;
+            border: none;
+        }
+        
+        .btn-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(28, 111, 188, 0.3);
+        }
+        
+        .btn-contact {
+            background: white;
+            color: #1C6FBC;
+            border: 2px solid #1C6FBC;
+        }
+        
+        .btn-contact:hover {
+            background: #1C6FBC;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(28, 111, 188, 0.2);
+        }
+        
+        .error-suggestions {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        
+        .suggestions-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .suggestions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .suggestion-link {
+            display: block;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            color: #1C6FBC;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .suggestion-link:hover {
+            background: #1C6FBC;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(28, 111, 188, 0.2);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-message {
+                font-size: 1rem;
+            }
+            
+            .error-container {
+                padding: 30px 20px;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-error {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-container">
+            <img src="https://flyozone.travel/web/images/logo.png" width="100%" alt="Ozone Travels" onerror="this.src='https://flyozone.travel/web/images/logo.png'" class="error-logo">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-message">
+                Oops! The page you're looking for seems to have taken a vacation.<br>
+                Don't worry, we can help you find your way back.
+            </p>
+            
+            <div class="error-actions">
+                <a href="https://flyozone.travel" class="btn-error btn-home">
+                    <i class="bi bi-house-door"></i>
+                    Back to Home
+                </a>
+                <a href="https://flyozone.travel/contact" class="btn-error btn-contact">
+                    <i class="bi bi-envelope"></i>
+                    Contact Support
+                </a>
+            </div>
+            
+            <div class="error-suggestions">
+                <h3 class="suggestions-title">Or try one of these popular destinations:</h3>
+                <div class="suggestions-grid">
+                    <a href="https://flyozone.travel/flights" class="suggestion-link">
+                        <i class="bi bi-airplane me-2"></i>
+                        Book Flights
+                    </a>
+                    <a href="https://flyozone.travel/hotels" class="suggestion-link">
+                        <i class="bi bi-building me-2"></i>
+                        Find Hotels
+                    </a>
+                    <a href="https://flyozone.travel/visa" class="suggestion-link">
+                        <i class="bi bi-file-earmark-text me-2"></i>
+                        Visa Services
+                    </a>
+                    <a href="https://flyozone.travel/destination-list" class="suggestion-link">
+                        <i class="bi bi-map me-2"></i>
+                        Destinations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Core Scripts -->
+    <script type="text/javascript" src="https://flyozone.travel/web/js/jquery-3.2.1.min.js"></script>
+    <script src="https://flyozone.travel/web/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Add subtle animation to elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.error-container');
+            const code = document.querySelector('.error-code');
+            const title = document.querySelector('.error-title');
+            const message = document.querySelector('.error-message');
+            
+            // Staggered animations
+            setTimeout(() => code.style.opacity = '1', 100);
+            setTimeout(() => title.style.opacity = '1', 300);
+            setTimeout(() => message.style.opacity = '1', 500);
+            setTimeout(() => container.style.opacity = '1', 700);
+        });
+    </script>
+</body>
+</html>

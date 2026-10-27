@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjith C — Senior PHP & Laravel Developer | Lead Cloud Software Engineer</title>
+  <meta name="description" content="Portfolio of Sanjith C, Senior PHP & Laravel Developer and Cloud Software Engineer with 6+ years of experience building scalable software, enterprise architectures, and REST APIs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=14">
+</head>
+<body>
+
+  <!-- Top Progress Bar -->
+  <div class="scroll-progress"><div class="scroll-progress-fill" id="progressFill"></div></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Sanjith C Home">
+        <span class="brand-bold">Sanjith</span>
+        <span class="brand-light">C.</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Selected Work</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <a href="assets/Sanjith_C_Resume.pdf" download="Sanjith_C_Resume.pdf" target="_blank" class="btn-nav-mobile-resume">
+            <span>Download Resume</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="assets/Sanjith_C_Resume.pdf" download="Sanjith_C_Resume.pdf" target="_blank" class="btn-header-resume" aria-label="Get Resume (PDF)">
+          <span>Get Resume</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn-header-cta">
+          <span>Let's Talk</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating Side Badge -->
+  <a href="#contact" class="floating-side-badge" aria-label="Quick Contact">
+    <span class="badge-pulse"></span>
+    <span class="badge-text">AVAILABLE FOR HIRE</span>
+  </a>
+
+  <!-- Floating Right Edge Theme Switcher (Matching Axevia right edge toggle) -->
+  <button class="axevia-edge-toggle" id="themeToggleBtn" aria-label="Toggle Visual Mode" title="Toggle Theme Visuals">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+  </button>
+
+  <main>
+    <!-- ==================== AXEVIA-STYLE HERO BANNER SECTION ==================== -->
+    <section id="hero" class="axevia-hero">
+      <!-- Background Ambient Glow & Dot Matrix Grid -->
+      <div class="axevia-bg-grid" aria-hidden="true"></div>
+      <div class="axevia-bg-glow" aria-hidden="true"></div>
+
+      <!-- Particle Canvas Stage (Pure Interactive 3D Point-Cloud Silhouette) -->
+      <div class="axevia-stage" id="particleStage">
+        <canvas id="particleCanvas"></canvas>
+      </div>
+
+      <div class="axevia-container">
+        
+        <!-- Main Content Grid: Typography on Left, Space for Center Particle Portrait, HUD Box on Right -->
+        <div class="axevia-main-grid">
+
+          <!-- Left Column: Editorial Headline & Bio matching reference -->
+          <div class="axevia-left-content">
+            <div class="editorial-headline-wrap">
+              <span class="editorial-greeting">Hello! I’m</span>
+              <h1 class="editorial-name">
+                <span class="name-text">
+                  Sanjith C
+                  <svg class="editorial-squiggle" viewBox="0 0 170 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M 3 8.5 C 24 2.5, 44 14, 68 8 C 92 2, 112 14, 136 7.5 C 148 3.5, 158 10, 167 6.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </h1>
+              <p class="editorial-subtitle">
+                Software Engineer specializing in PHP, Laravel &amp; Cloud Platforms.
+              </p>
+            </div>
+
+            <div class="axevia-tags-bar">
+              <span class="bar-bracket">[</span>
+              <span class="bar-item">LARAVEL</span>
+              <span class="bar-dot">·</span>
+              <span class="bar-item">CLOUD</span>
+              <span class="bar-dot">·</span>
+              <span class="bar-item">REST APIS</span>
+              <span class="bar-dot">·</span>
+              <span class="bar-item">POSTGRESQL</span>
+              <span class="bar-bracket">]</span>
+              <span class="bar-line"></span>
+            </div>
+
+            <div class="axevia-actions-group">
+              <a href="#work" class="btn-axevia-primary">
+                <span>EXPLORE WORKS</span>
+                <span class="btn-glyph">↳</span>
+              </a>
+              <a href="#contact" class="btn-axevia-ghost">
+                <span>GET IN TOUCH</span>
+                <span class="btn-glyph">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Center Spacer: Visual Area for Particle Portrait -->
+          <div class="axevia-center-spacer" aria-hidden="true"></div>
+
+          <!-- Right Column: Orbital Quick Links & Experience Arc -->
+          <div class="axevia-orbital-section" aria-label="Quick Links and Experience Arc">
+            <!-- Concentric Orbital Orbit Rings -->
+            <svg class="orbital-svg-rings" viewBox="0 0 360 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path class="orbit-path-inner" d="M 135 32 A 300 300 0 0 1 135 448" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+              <path class="orbit-path-main" d="M 180 6 A 350 350 0 0 1 180 474" stroke="rgba(255, 255, 255, 0.22)" stroke-width="1.5"/>
+              <path class="orbit-path-outer" d="M 226 -17 A 400 400 0 0 1 226 497" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" stroke-dasharray="4 6"/>
+            </svg>
+
+            <!-- Node 1: Resume Download Option -->
+            <a href="assets/Sanjith_C_Resume.pdf" download="Sanjith_C_Resume.pdf" target="_blank" class="orbital-circle node-resume" aria-label="Download Resume CV" title="Download Sanjith C Resume (PDF)">
+              <div class="circle-inner">
+                <svg class="circle-icon icon-download" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="12" y1="18" x2="12" y2="12"/>
+                  <polyline points="9 15 12 18 15 15"/>
+                </svg>
+                <span class="circle-sub">CV</span>
+              </div>
+              <span class="orbital-tooltip">Download CV</span>
+            </a>
+
+            <!-- Node 2: 6+ Years Experience Circle -->
+            <a href="#experience" class="orbital-circle node-experience" aria-label="6+ Years Experience" title="6+ Years of Professional Software Engineering Experience">
+              <div class="circle-inner exp-inner">
+                <span class="exp-num" id="orbitalExpNum">6+</span>
+                <span class="exp-label">YEARS EXP</span>
+              </div>
+              <span class="orbital-tooltip">6+ Years Exp</span>
+            </a>
+
+            <!-- Node 3: LinkedIn Profile Link -->
+            <a href="https://www.linkedin.com/in/sanjith-cb00963114" target="_blank" rel="noopener noreferrer" class="orbital-circle node-linkedin" aria-label="LinkedIn Profile" title="View Sanjith C on LinkedIn">
+              <div class="circle-inner">
+                <svg class="circle-icon icon-linkedin" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66 1.66 1.66 0 0 0-1.66-1.66Z"/>
+                </svg>
+              </div>
+              <span class="orbital-tooltip">LinkedIn Profile</span>
+            </a>
+
+            <!-- Node 4: GitHub Repository Link -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="orbital-circle node-github" aria-label="GitHub Profile" title="Explore Code & Repositories">
+              <div class="circle-inner">
+                <svg class="circle-icon icon-github" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </div>
+              <span class="orbital-tooltip">GitHub Repos</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Bottom HUD Telemetry Bar matching Axevia ThemeForest -->
+        <div class="axevia-bottom-hud">
+          <div class="bottom-badges">
+            <div class="telemetry-pill">
+              <span class="pill-k">ROLE</span>
+              <span class="pill-v">CREATIVE DEVELOPER</span>
+            </div>
+            <span class="telemetry-sep">·</span>
+            <div class="telemetry-pill">
+              <span class="pill-k">AVAILABILITY</span>
+              <span class="pill-v val-highlight">OPEN</span>
+            </div>
+            <span class="telemetry-sep">·</span>
+            <div class="telemetry-pill">
+              <span class="pill-k">RENDERING</span>
+              <span class="pill-v">WEBGL / THREE.JS</span>
+            </div>
+            <span class="telemetry-sep">·</span>
+            <div class="telemetry-pill">
+              <span class="pill-k">CORE ID</span>
+              <span class="pill-v">08641</span>
+            </div>
+          </div>
+
+          <div class="bottom-telemetry-right">
+            <div class="telemetry-contact">
+              <span class="meta-label">Wanna Say Hello?</span>
+              <a href="mailto:sanjithch95@gmail.com" class="meta-val meta-link">sanjithch95@gmail.com</a>
+            </div>
+            <div class="telemetry-clock">
+              <span class="meta-label">Local Time</span>
+              <span class="meta-val"><span class="clock-city">Trivandrum</span> <span id="hudLiveClock" class="clock-time">11:49 a.m.</span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION (WHITE BACKGROUND) ==================== -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <!-- Section Header Bar (Red line + tags) -->
+        <div class="editorial-header">
+          <span class="editorial-tag">ABOUT // WHAT I BRING TO THE TEAM</span>
+          <span class="editorial-number">01</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column -->
+          <div class="about-lead-col">
+            <h2 class="about-heading">
+              What I bring to the team
+            </h2>
+            <div class="about-resume-cta">
+              <a href="assets/Sanjith_C_Resume.pdf" download="Sanjith_C_Resume.pdf" target="_blank" class="btn-about-resume" aria-label="Download Sanjith C Resume (PDF)">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download Resume</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="about-content-col">
+            <p class="about-paragraph">
+              I'm a Senior PHP / Laravel Developer with 6+ years of experience building scalable software using PHP, Laravel, Lumen, JavaScript, jQuery, Ajax, React JS, and MySQL. I've worked across the full development lifecycle — from greenfield builds to maintaining production platforms at scale.
+            </p>
+            <p class="about-paragraph about-paragraph-secondary">
+              Currently at Crayo Tech as Associate Team Lead, I focus on REST API design, admin panel development, and backend architecture. Recognized as Employee of the Year (2025) for project leadership across FashPick, RightCars, and Ozone.
+            </p>
+            <div class="about-tags-row">
+              <span class="about-tag">PHP</span>
+              <span class="about-tag">Laravel</span>
+              <span class="about-tag">Lumen</span>
+              <span class="about-tag">REST APIs</span>
+              <span class="about-tag">MySQL</span>
+              <span class="about-tag">React JS</span>
+              <span class="about-tag">jQuery</span>
+              <span class="about-tag">Ajax</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Column Quick Facts Strip -->
+        <div class="about-facts-strip">
+          <div class="fact-col">
+            <span class="fact-label">Based in</span>
+            <span class="fact-val">Malappuram, Kerala, India</span>
+          </div>
+          <div class="fact-col">
+            <span class="fact-label">Focus</span>
+            <span class="fact-val">PHP, Laravel, REST APIs</span>
+          </div>
+          <div class="fact-col">
+            <span class="fact-label">Education</span>
+            <span class="fact-val">B.Sc. Computer Science, Kerala University</span>
+          </div>
+          <div class="fact-col">
+            <span class="fact-label">Email</span>
+            <span class="fact-val"><a href="mailto:sanjithch95@gmail.com" class="fact-email-link">sanjithch95@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED WORK / PORTFOLIO ==================== -->
+    <section id="work" class="work-section">
+      <div class="section-container">
+        <!-- Section Header Bar -->
+        <div class="editorial-header">
+          <span class="editorial-tag">PORTFOLIO // SELECTED WORK</span>
+          <span class="editorial-number">02</span>
+        </div>
+
+        <div class="work-top-bar">
+          <h2 class="section-title">Engineered for performance and scale.</h2>
+          
+          <!-- Category Filters -->
+          <div class="filter-group" id="filterGroup">
+            <button class="filter-pill active" data-filter="all">All Projects</button>
+            <button class="filter-pill" data-filter="backend">Backend &amp; APIs</button>
+            <button class="filter-pill" data-filter="ecommerce">E-Commerce</button>
+            <button class="filter-pill" data-filter="webapp">Web Apps</button>
+          </div>
+        </div>
+
+        <!-- Editorial Masonry Showcase Grid (Inspired by the mockup collage) -->
+        <div class="portfolio-grid" id="portfolioGrid">
+
+          <!-- Item 1: FashPick -->
+          <article class="project-card" data-cat="ecommerce backend">
+            <a href="https://www.fashpick.com/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="assets/projects/fashpick.jpg" alt="FashPick — Online Fashion Store" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="overlay-btn">View Live Platform ↗</span>
+              </div>
+            </a>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">E-Commerce</span>
+                <span class="tag">REST API</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://www.fashpick.com/" target="_blank" rel="noopener noreferrer">FashPick</a>
+              </h3>
+              <p class="project-desc">
+                High-volume fashion e-commerce storefront — REST API design, administrative operations, payment gateways, and database architecture.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 2: RightCars -->
+          <article class="project-card" data-cat="webapp backend">
+            <a href="https://www.righcars.com/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="assets/projects/rightcars.png" alt="RightCars — Used Cars Marketplace Bahrain" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="overlay-btn">View Live Platform ↗</span>
+              </div>
+            </a>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">Automotive</span>
+                <span class="tag">Team Lead</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://www.righcars.com/" target="_blank" rel="noopener noreferrer">RightCars</a>
+              </h3>
+              <p class="project-desc">
+                Automotive marketplace in Bahrain — built and maintained as Associate Team Lead covering search, listings, dealer portals, and lead routing.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 3: Ozone Travels -->
+          <article class="project-card" data-cat="webapp backend">
+            <a href="https://flyozone.travel/flights" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="assets/projects/ozone.jpg" alt="Ozone Travels — Flight Booking Platform" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="overlay-btn">View Live Platform ↗</span>
+              </div>
+            </a>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Travel Booking</span>
+                <span class="tag">APIs</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://flyozone.travel/flights" target="_blank" rel="noopener noreferrer">Ozone Travels</a>
+              </h3>
+              <p class="project-desc">
+                Comprehensive travel engine — flight searching, hotel booking, visa workflows, and scalable caching mechanisms for rapid fare queries.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 4: Wonrupee -->
+          <article class="project-card" data-cat="ecommerce backend">
+            <a href="https://wonrupee.com/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="assets/projects/wonrupee.jpg" alt="Wonrupee — Premium Curated Essentials" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="overlay-btn">View Live Platform ↗</span>
+              </div>
+            </a>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Rewards Engine</span>
+                <span class="tag">Checkout</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://wonrupee.com/" target="_blank" rel="noopener noreferrer">Wonrupee</a>
+              </h3>
+              <p class="project-desc">
+                Curated tech and lifestyle shop — catalog management, secure checkout, customer wallet, and charity gift drawing systems.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 5: Ishloom -->
+          <article class="project-card" data-cat="ecommerce">
+            <a href="https://ishloom.com/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="assets/projects/ishloom.webp" alt="Ishloom Handcrafted Fashion" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="overlay-btn">View Live Platform ↗</span>
+              </div>
+            </a>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">E-Commerce</span>
+                <span class="tag">Artisanal</span>
+                <span class="tag">WooCommerce</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://ishloom.com/" target="_blank" rel="noopener noreferrer">Ishloom</a>
+              </h3>
+              <p class="project-desc">
+                Handcrafted fashion storefront — curated artisanal collections, new seasonal drops, custom filters, and seamless storytelling.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 6: SideGigs -->
+          <article class="project-card" data-cat="backend webapp">
+            <a href="https://sidegigs.app/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="assets/projects/sidegigs.png" alt="SideGigs Mobile App Platform" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="overlay-btn">View Live Platform ↗</span>
+              </div>
+            </a>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Mobile APIs</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">Geo-Search</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://sidegigs.app/" target="_blank" rel="noopener noreferrer">SideGigs</a>
+              </h3>
+              <p class="project-desc">
+                Part-time gig discovery platform — RESTful API services for job search, applications, candidate chat, and geo-targeted listings.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 7: AlMeswak -->
+          <article class="project-card" data-cat="webapp">
+            <a href="https://almeswak.com/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="assets/projects/almeswak.png" alt="AlMeswak Medical Group" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="overlay-btn">View Live Platform ↗</span>
+              </div>
+            </a>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Healthcare</span>
+                <span class="tag">Bilingual EN/AR</span>
+                <span class="tag">CMS</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://almeswak.com/" target="_blank" rel="noopener noreferrer">AlMeswak Medical</a>
+              </h3>
+              <p class="project-desc">
+                Premier dental and dermatology clinic network — branch directories, doctor profiles, appointment booking, and multi-language support.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 8: Aseela Nursing -->
+          <article class="project-card" data-cat="webapp">
+            <a href="https://aseelanursingservices.qa/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="assets/projects/aseela.png" alt="Aseela Nursing Services Qatar" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="overlay-btn">View Live Platform ↗</span>
+              </div>
+            </a>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Healthcare</span>
+                <span class="tag">Qatar</span>
+                <span class="tag">PHP</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://aseelanursingservices.qa/" target="_blank" rel="noopener noreferrer">Aseela Nursing</a>
+              </h3>
+              <p class="project-desc">
+                Home healthcare platform in Qatar — specialized care service flows, career applications, and client consultation intake.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RUNNING TYPOGRAPHY TICKER ==================== -->
+    <div class="ticker-wrapper" aria-hidden="true">
+      <!-- Upper Ticker (Light Silver/Outline) -->
+      <div class="ticker-track ticker-light">
+        <div class="ticker-content">
+          <span>LARAVEL</span><span class="sep">•</span>
+          <span>REST APIS</span><span class="sep">•</span>
+          <span>CLOUD ARCHITECTURE</span><span class="sep">•</span>
+          <span>PHP</span><span class="sep">•</span>
+          <span>POSTGRESQL</span><span class="sep">•</span>
+          <span>MYSQL</span><span class="sep">•</span>
+          <span>REACT JS</span><span class="sep">•</span>
+          <span>REDIS CACHE</span><span class="sep">•</span>
+          <span>SYSTEM DESIGN</span><span class="sep">•</span>
+        </div>
+        <div class="ticker-content" aria-hidden="true">
+          <span>LARAVEL</span><span class="sep">•</span>
+          <span>REST APIS</span><span class="sep">•</span>
+          <span>CLOUD ARCHITECTURE</span><span class="sep">•</span>
+          <span>PHP</span><span class="sep">•</span>
+          <span>POSTGRESQL</span><span class="sep">•</span>
+          <span>MYSQL</span><span class="sep">•</span>
+          <span>REACT JS</span><span class="sep">•</span>
+          <span>REDIS CACHE</span><span class="sep">•</span>
+          <span>SYSTEM DESIGN</span><span class="sep">•</span>
+        </div>
+      </div>
+
+      <!-- Lower Ticker (Bold White / Red Intersecting Section) -->
+      <div class="ticker-track ticker-bold">
+        <div class="ticker-content">
+          <span>DEVELOPMENT</span><span class="sep">.</span>
+          <span>INTERFACE</span><span class="sep">.</span>
+          <span>DIGITAL</span><span class="sep">.</span>
+          <span>PRODUCT</span><span class="sep">.</span>
+          <span>ENGINEERING</span><span class="sep">.</span>
+          <span>ARCHITECTURE</span><span class="sep">.</span>
+        </div>
+        <div class="ticker-content" aria-hidden="true">
+          <span>DEVELOPMENT</span><span class="sep">.</span>
+          <span>INTERFACE</span><span class="sep">.</span>
+          <span>DIGITAL</span><span class="sep">.</span>
+          <span>PRODUCT</span><span class="sep">.</span>
+          <span>ENGINEERING</span><span class="sep">.</span>
+          <span>ARCHITECTURE</span><span class="sep">.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== FEATURE / EXPERTISE SECTION (RED BACKGROUND) ==================== -->
+    <section id="expertise" class="feature-red-section">
+
+      <div class="section-container feature-red-container">
+        <!-- Left: 3D Animated Developer Character -->
+        <div class="feature-visual">
+          <div class="animated-char-container">
+            <div class="char-glow" aria-hidden="true"></div>
+            
+            <div class="feature-photo-wrapper char-card">
+              <img src="assets/animated-character.jpg" alt="Sanjith C — 3D Animated Character" class="feature-photo animated-char-img" width="550" height="750">
+              
+              <div class="char-badge">
+                <span class="badge-dot"></span>
+                <span>LEAD CODE ARCHITECT</span>
+              </div>
+            </div>
+
+            <!-- Floating animated tech badges around character -->
+            <div class="char-pill pill-php">&lt;?php&gt;</div>
+            <div class="char-pill pill-laravel">Laravel 11</div>
+            <div class="char-pill pill-api">REST APIs</div>
+          </div>
+        </div>
+
+        <!-- Right: Technical Skills & Metrics -->
+        <div class="feature-content">
+          <h2 class="feature-heading">
+            We craft indelible digital experiences via robust engineering services.
+          </h2>
+          <p class="feature-desc">
+            From relational database normalization and high-throughput REST APIs to seamless interactive frontends, every layer of the application is engineered for maximum speed, security, and uptime.
+          </p>
+
+          <!-- Skill Progress Bars (Matching Mockup with Black Pills & Percentages) -->
+          <div class="skill-meters-list">
+            <div class="skill-meter-item">
+              <div class="meter-info">
+                <span class="meter-name">PHP &amp; LARAVEL ECOSYSTEM</span>
+                <span class="meter-value">95%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="--percent: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-item">
+              <div class="meter-info">
+                <span class="meter-name">RESTFUL API ARCHITECTURE</span>
+                <span class="meter-value">92%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="--percent: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-item">
+              <div class="meter-info">
+                <span class="meter-name">DATABASE DESIGN (MYSQL / POSTGRESQL)</span>
+                <span class="meter-value">90%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="--percent: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-item">
+              <div class="meter-info">
+                <span class="meter-name">REACT &amp; MODERN JAVASCRIPT</span>
+                <span class="meter-value">85%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="--percent: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-item">
+              <div class="meter-info">
+                <span class="meter-name">CLOUD, CACHING &amp; SYSTEM OPTIMIZATION</span>
+                <span class="meter-value">88%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="--percent: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & RECOGNITION (WHITE BACKGROUND) ==================== -->
+    <section id="experience" class="experience-section">
+      <div class="section-container">
+        <!-- Section Header Bar -->
+        <div class="editorial-header">
+          <span class="editorial-tag">CAREER // TIMELINE &amp; AWARDS</span>
+          <span class="editorial-number">03</span>
+        </div>
+
+        <div class="experience-layout">
+          <!-- Left Column: Story & Award Highlight -->
+          <div class="experience-intro">
+            <h2 class="experience-heading">
+              Proven track record across full engineering lifecycles.
+            </h2>
+            <p class="experience-text">
+              Over 6+ years of professional engineering experience, progressing from software engineer to Associate Team Lead—architecting enterprise platforms, cloud backends, and high-performance REST APIs.
+            </p>
+
+            <!-- Award Highlight Card -->
+            <div class="award-spotlight-card">
+              <div class="award-spotlight-header">
+                <span class="award-badge">2025 HONOREE</span>
+                <span class="award-org">Crayo Tech Business Solutions</span>
+              </div>
+              <h3 class="award-title">Employee of the Year</h3>
+              <p class="award-quote">
+                "Recognized for leadership, dedication, and excellence across FashPick, RightCars, and Ozone — you make up the heart of Crayo Tech!"
+              </p>
+              
+              <!-- Real Award Certificate Preview -->
+              <div class="award-photo-thumb" id="awardThumb">
+                <img src="assets/awards/employee-of-the-year-2025.png" alt="Sanjith C receiving Employee of the Year 2025" loading="lazy">
+                <span class="thumb-hint">Click to enlarge certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Numbered Timeline List (Matching mockup style) -->
+          <div class="timeline-list">
+
+            <!-- 01 Award -->
+            <div class="timeline-item">
+              <span class="item-num">01</span>
+              <div class="item-details">
+                <div class="item-title-row">
+                  <h3 class="item-title">Employee of the Year — Crayo Tech</h3>
+                  <span class="item-year">2025</span>
+                </div>
+                <p class="item-desc">
+                  Company-wide honor awarded for outstanding technical leadership and on-schedule delivery across mission-critical products.
+                </p>
+              </div>
+            </div>
+
+            <!-- 02 Crayo Tech -->
+            <div class="timeline-item">
+              <span class="item-num">02</span>
+              <div class="item-details">
+                <div class="item-title-row">
+                  <h3 class="item-title">Senior PHP Developer &amp; Associate Team Lead</h3>
+                  <span class="item-year">2024 — Present</span>
+                </div>
+                <span class="item-sub">Crayo Tech Business Solutions • Technopark, Trivandrum</span>
+                <p class="item-desc">
+                  Leading backend engineering for FashPick, RightCars, and Ozone. Designing REST API specifications, schema design, and deployment pipelines.
+                </p>
+              </div>
+            </div>
+
+            <!-- 03 Swizzle -->
+            <div class="timeline-item">
+              <span class="item-num">03</span>
+              <div class="item-details">
+                <div class="item-title-row">
+                  <h3 class="item-title">Software Engineer — Cloud</h3>
+                  <span class="item-year">2023 — 2024</span>
+                </div>
+                <span class="item-sub">Swizzle Innovations • Thiruvananthapuram</span>
+                <p class="item-desc">
+                  Engineered FileFlow cloud file management tool. Maintained core SwizzleSuite infrastructure including activity logs, session security, and profile systems.
+                </p>
+              </div>
+            </div>
+
+            <!-- 04 ICmed -->
+            <div class="timeline-item">
+              <span class="item-num">04</span>
+              <div class="item-details">
+                <div class="item-title-row">
+                  <h3 class="item-title">Software Engineer — Cloud</h3>
+                  <span class="item-year">2020 — 2021</span>
+                </div>
+                <span class="item-sub">ICmed Systems &amp; Software • Thiruvananthapuram</span>
+                <p class="item-desc">
+                  Developed mobile REST APIs for HireHQ, Rems, and SuccessDesk. Built HireHQ and OCMC administration portals backed by PostgreSQL.
+                </p>
+              </div>
+            </div>
+
+            <!-- 05 E-World -->
+            <div class="timeline-item">
+              <span class="item-num">05</span>
+              <div class="item-details">
+                <div class="item-title-row">
+                  <h3 class="item-title">PHP Developer</h3>
+                  <span class="item-year">2020 — 2021</span>
+                </div>
+                <span class="item-sub">E-World Information Systems • Arayidathupalam, Kozhikode</span>
+                <p class="item-desc">
+                  Developed multiple web-based applications from scratch using core PHP.
+                </p>
+              </div>
+            </div>
+
+            <!-- 06 Education -->
+            <div class="timeline-item">
+              <span class="item-num">06</span>
+              <div class="item-details">
+                <div class="item-title-row">
+                  <h3 class="item-title">Bachelor's Degree in Computer Science</h3>
+                  <span class="item-year">2011 — 2014</span>
+                </div>
+                <span class="item-sub">University of Kerala, Calicut</span>
+                <p class="item-desc">
+                  Foundations in algorithms, database management, software engineering, and systems architecture.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION & FOOTER ==================== -->
+    <footer id="contact" class="footer-cta-section">
+
+      <div class="section-container footer-inner">
+        <!-- Giant Headline (Matching "Create something great.") -->
+        <div class="cta-header">
+          <h2 class="cta-title">Create something great.</h2>
+          
+          <!-- Big Email Address with Red Icon -->
+          <div class="cta-email-wrapper">
+            <a href="mailto:sanjithch95@gmail.com" class="cta-email-link" id="emailCopyBtn" title="Click to copy email or send message">
+              <span class="email-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span class="email-address">sanjithch95@gmail.com</span>
+            </a>
+            <span class="copy-tooltip" id="copyTooltip">Click to copy</span>
+          </div>
+        </div>
+
+        <!-- Quick Contact Form & Info Grid -->
+        <div class="contact-card-grid">
+          <div class="contact-form-pane">
+            <h3 class="pane-title">Start a project inquiry</h3>
+            <form id="contactForm" class="inquiry-form">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contactName">Your Name</label>
+                  <input type="text" id="contactName" name="name" required placeholder="Alex Rivera">
+                </div>
+                <div class="form-field">
+                  <label for="contactEmail">Email Address</label>
+                  <input type="email" id="contactEmail" name="email" required placeholder="alex@company.com">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contactService">Project Type</label>
+                <select id="contactService" name="service">
+                  <option value="backend">Backend &amp; Laravel Development</option>
+                  <option value="api">REST API &amp; Microservices</option>
+                  <option value="fullstack">Full-Stack Web Application</option>
+                  <option value="consulting">Architecture Consulting / Code Review</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="contactMessage">Project Details</label>
+                <textarea id="contactMessage" name="message" rows="4" required placeholder="Tell me about your timeline, stack requirements, and goals..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">
+                <span>Send Inquiry</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
+
+          <div class="contact-details-pane">
+            <h3 class="pane-title">Direct Connection</h3>
+            <div class="contact-details-list">
+              <div class="detail-row">
+                <span class="detail-label">Phone / WhatsApp</span>
+                <a href="tel:+919633288269" class="detail-val">+91 96332 88269</a>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Current Base</span>
+                <span class="detail-val">Malappuram / Trivandrum, Kerala, India</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Availability</span>
+                <span class="detail-val status-avail">Open for contracts &amp; senior roles</span>
+              </div>
+            </div>
+
+            <div class="social-links-grid">
+              <a href="https://linkedin.com/in/sanjith-c-b00963114" target="_blank" rel="noopener noreferrer" class="social-box">
+                <span>LinkedIn</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <a href="mailto:sanjithch95@gmail.com" class="social-box">
+                <span>Email</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <a href="https://wa.me/919633288269" target="_blank" rel="noopener noreferrer" class="social-box">
+                <span>WhatsApp</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer Bar (Matching mockup format) -->
+        <div class="footer-bottom-bar">
+          <p class="footer-copy">
+            Development is the heart of our craft. Sanjith C — Senior PHP &amp; Laravel Developer.
+          </p>
+          <div class="footer-nav-socials">
+            <a href="https://linkedin.com/in/sanjith-c-b00963114" target="_blank" rel="noopener noreferrer">In.</a>
+            <a href="https://wa.me/919633288269" target="_blank" rel="noopener noreferrer">Wa.</a>
+            <a href="mailto:sanjithch95@gmail.com">Mail.</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Award Lightbox Modal -->
+  <div class="lightbox-modal" id="awardModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="modalBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close modal">&times;</button>
+      <img src="assets/awards/employee-of-the-year-2025.png" alt="Sanjith C Employee of the Year Certificate" class="modal-image">
+      <div class="modal-caption">
+        <strong>Employee of the Year 2025</strong> — Crayo Tech Business Solutions
+      </div>
+    </div>
+  </div>
+
+  <script src="particle-data.js?v=12"></script>
+  <script src="script.js?v=12"></script>
+</body>
+</html>
